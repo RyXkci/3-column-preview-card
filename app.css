@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    height: 60%;
+    width: 55%;
+    border-radius: 0.5em;
+    display: flex;
+}
+
+.card {
+    height: 100%;
+    flex: 1;
+
+}
+
+
+.card.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.card.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buttons {
+    margin-left: 10%;
+}
+
+.text {
+    padding: 0 10%;
+}
+
+img {
+    width: 30%;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: hsl(0, 0%, 95%);
+}
+button {
+    border-radius: 3em;
+    padding: 5% 25%;
+    border: none;
+}
+
+button:hover {
+    color: white !important;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+button.sedan {
+    color: hsl(31, 77%, 52%);
+}
+
+button.suv {
+    color: hsl(184, 100%, 22%);
+}
+button.luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 992px) {
+    .buttons {
+        margin-left: 0;
+    }
+    
+
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        height: auto;
+    }
+    .cards {
+        height: 100%;;
+        flex-direction: column;
+    }
+
+    .card.sedan {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    .card.luxury {
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    article.text {
+        padding: 10%;
+    }
+
+    button {
+        margin-bottom: 5%;
+        padding: 5% 10%;
+    }
+    .buttons {
+        margin-left: 10%;
+    }
+}
